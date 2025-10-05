@@ -1,22 +1,28 @@
 {
-	"movies": [
+	"songs": [
 		{
-			"Title": "Lost In Translation",
-			"Director": "Sofia Coppola",
-			"Rating": "R",
-			"Year": "2003"
+			"Title": "Little by Little",
+			"Artist": "GEMINII",
+			"Genre": "Indie Pop",
+			"Year": "2020"
 		},
 		{
-			"Title": "Casino Royale",
-			"Director": "Martin Campbell",
-			"Rating": "PG-13",
-			"Year": "2006"
+			"Title": "Devil's Advocate",
+			"Artist": "The Neighbourhood",
+			"Genre": "Alternative",
+			"Year": "2020"
 		},
 		{
-			"Title": "The Dark Knight",
-			"Director": "Christopher Nolan",
-			"Rating": "PG-13",
-			"Year": "2008"
-		}
+			"Title": "Waterfalls Coming Out Your Mouth",
+			"Artist": "Glass Animals",
+			"Genre": "Alternative",
+			"Year": "2020"
+		}, 
+		{
+			"Title": "Venus",
+			"Artist": "Lady Gaga",
+			"Genre": "Electropop",
+			"Year": "2013"
+		} 
 	]
 }
