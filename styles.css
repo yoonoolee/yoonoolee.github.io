@@ -58,12 +58,25 @@ nav a:hover {
     height: fit-content;
 }
 
-.profile-pic {
+.profile-pic-wrapper {
+    position: relative;
     width: 260px;
     height: 260px;
+    margin-bottom: 1.5rem;
+    background-image: url('images/squiggly.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1.5rem;
 }
 
 .profile-name {
@@ -358,9 +371,16 @@ p a:hover {
         text-align: center;
     }
 
-    .profile-pic {
+    .profile-pic-wrapper {
         width: 200px;
         height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
     }
 
     .profile-links {
