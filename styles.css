@@ -38,6 +38,10 @@ nav a:hover {
     opacity: 0.6;
 }
 
+nav a.active {
+    font-weight: 900;
+}
+
 .container {
     max-width: 1080px;
     margin: 0 auto;
@@ -54,15 +58,16 @@ nav a:hover {
 
 .sidebar {
     position: sticky;
-    top: 2rem;
+    top: 0.5rem;
     height: fit-content;
 }
 
 .profile-pic-wrapper {
     position: relative;
-    width: 260px;
-    height: 260px;
-    margin-bottom: 1.5rem;
+    width: 310px;
+    height: 310px;
+    margin-bottom: -1rem;
+    margin-left: -25px;
     background-image: url('images/squiggly.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -73,8 +78,8 @@ nav a:hover {
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -183,7 +188,7 @@ p a:hover {
 
 .no-underline {
     text-decoration: none;
-    color: #1a1a1a;
+    color: #000000;
     transition: opacity 0.2s;
 }
 
@@ -218,14 +223,12 @@ p a:hover {
     margin-bottom: 0;
 }
 
-.timeline-left .timeline-content,
-.timeline-right .timeline-content {
+.timeline-item .timeline-content {
     text-align: left;
     grid-column: 2;
 }
 
-.timeline-left .timeline-center,
-.timeline-right .timeline-center {
+.timeline-item .timeline-center {
     grid-column: 1;
 }
 
@@ -293,6 +296,7 @@ p a:hover {
 
 .timeline-subtitle {
     font-size: 0.9375rem;
+    font-weight: 500;
     color: #1a1a1a;
     margin-bottom: 0.25rem;
 }
@@ -306,6 +310,10 @@ p a:hover {
 
 .timeline-role:last-of-type {
     margin-bottom: 0;
+}
+
+.timeline-description + .timeline-role {
+    margin-top: 1rem;
 }
 
 .timeline-description {
@@ -338,19 +346,22 @@ p a:hover {
     margin-bottom: 0;
 }
 
-.home-section h3 {
+.home-section dt {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1a1a1a;
     margin-bottom: 0;
+    grid-column: 1;
 }
 
-.home-content {
+.home-section dd {
+    color: #4a4a4a;
     margin-left: 0;
-}
-
-.home-content p {
     margin-bottom: 0.5rem;
+    grid-column: 2;
 }
 
-.home-content p:last-child {
+.home-section dd:last-child {
     margin-bottom: 0;
 }
 

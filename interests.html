@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avery Lee</title>
+    <title>Interests - Avery Lee</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -13,10 +13,10 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="experience.html">Experience</a>
                 <a href="projects.html">Projects</a>
-                <a href="interests.html">Interests</a>
+                <a href="interests.html" class="active">Interests</a>
             </nav>
         </div>
     </header>
@@ -59,103 +59,10 @@
         </aside>
 
         <main class="main-content">
-            <section id="about">
-                <h2><span id="typed-text"></span><span class="cursor">|</span></h2>
-
-                <dl class="home-section">
-                    <dt>Education</dt>
-                    <dd>M.S. Machine Learning & Data Science @ UC Berkeley (2027)</dd>
-                    <dd>B.S. Applied Mathematics & B.A. Information Systems & Minor Data Science @ University of Washington (2022)</dd>
-                </dl>
-
-                <dl class="home-section">
-                    <dt>Work</dt>
-                    <dd>Cofounder & CTO @ <a href="https://cherrytree.app/" target="_blank" class="no-underline">Cherrytree</a></dd>
-                    <dd>Software Engineer @ Goldman Sachs (2023-2025)</dd>
-                </dl>
-
-                <dl class="home-section">
-                    <dt>Projects</dt>
-                    <dd>Check out my projects <a href="projects.html">here</a></dd>
-                </dl>
-
-                <dl class="home-section">
-                    <dt>Skills</dt>
-                    <dd>Natural Language Processing, LLMs, ML Frameworks, Statistical Modeling, Data Science, Data Engineering</dd>
-                </dl>
-
-                <dl class="home-section">
-                    <dt>Languages</dt>
-                    <dd>Python, SQL, R, Java, MATLAB, C++</dd>
-                </dl>
-
-                <dl class="home-section">
-                    <dt>Interests</dt>
-                    <dd>Traveling, Pilates, Thrift Shopping, New Restaurants, Same Restaurants</dd>
-                </dl>
+            <section id="interests">
+                <h2>Interests</h2>
             </section>
         </main>
     </div>
-
-    <script>
-        (() => {
-            const phrases = [
-                "Avery!",
-                "a Master's Student @ UC Berkeley",
-                "Cofounder & CTO @ Cherrytree",
-                "excited for you to check out my portfolio"
-            ];
-
-            const element = document.getElementById('typed-text');
-            const prefix = "Hi, I'm ";
-
-            let state = {
-                phraseIndex: 0,
-                charIndex: 0,
-                isDeleting: false,
-                isTypingPrefix: true,
-                prefixIndex: 0,
-                completedCycle: false
-            };
-
-            function type() {
-                if (state.isTypingPrefix) {
-                    element.textContent = prefix.substring(0, state.prefixIndex + 1);
-                    state.prefixIndex++;
-
-                    if (state.prefixIndex === prefix.length) {
-                        state.isTypingPrefix = false;
-                        setTimeout(type, 500);
-                    } else {
-                        setTimeout(type, 75);
-                    }
-                    return;
-                }
-
-                const currentPhrase = phrases[state.phraseIndex];
-                const text = currentPhrase.substring(0, state.charIndex + (state.isDeleting ? -1 : 1));
-
-                element.textContent = prefix + text;
-                state.charIndex += state.isDeleting ? -1 : 1;
-
-                let delay = state.isDeleting ? 25 : (state.phraseIndex === 0 ? 75 : 50);
-
-                if (!state.isDeleting && state.charIndex === currentPhrase.length) {
-                    if (state.phraseIndex === 0 && state.completedCycle) return;
-                    delay = 2000;
-                    state.isDeleting = true;
-                } else if (state.isDeleting && state.charIndex === 0) {
-                    state.isDeleting = false;
-                    state.phraseIndex = (state.phraseIndex + 1) % phrases.length;
-                    if (state.phraseIndex === 0) state.completedCycle = true;
-                    delay = 500;
-                }
-
-                setTimeout(type, delay);
-            }
-
-            window.addEventListener('load', () => setTimeout(type, 1000));
-        })();
-    </script>
 </body>
 </html>
