@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: #FAFAFA;
+    color: #1a1a1a;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    padding: 2rem 0;
+    background-color: #FAFAFA;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.sidebar {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.profile-pic {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.profile-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.profile-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+}
+
+.profile-location svg {
+    flex-shrink: 0;
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: opacity 0.2s;
+}
+
+.profile-link:hover {
+    opacity: 0.6;
+}
+
+.profile-link svg {
+    flex-shrink: 0;
+}
+
+.main-content {
+    min-width: 0;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+}
+
+p a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+}
+
+p a:hover {
+    opacity: 0.6;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: opacity 0.2s;
+}
+
+.no-underline:hover {
+    opacity: 0.6;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e0e0e0;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-left .timeline-content,
+.timeline-right .timeline-content {
+    text-align: left;
+    grid-column: 2;
+}
+
+.timeline-left .timeline-center,
+.timeline-right .timeline-center {
+    grid-column: 1;
+}
+
+.timeline-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    padding-top: 0;
+}
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #1a1a1a;
+    border: 3px solid #FAFAFA;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    margin-left: 1px;
+}
+
+.timeline-content {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+.timeline-item:nth-child(1) .timeline-content {
+    animation-delay: 0.3s;
+}
+
+.timeline-item:nth-child(2) .timeline-content {
+    animation-delay: 0.8s;
+}
+
+.timeline-item:nth-child(3) .timeline-content {
+    animation-delay: 1.3s;
+}
+
+.timeline-period {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    line-height: 1.125rem;
+}
+
+.timeline-subitem {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: start;
+}
+
+.timeline-subitem:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-subitem-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.timeline-subtitle {
+    font-size: 0.9375rem;
+    color: #1a1a1a;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-role {
+    font-size: 0.875rem;
+    color: #4a4a4a;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.timeline-role:last-of-type {
+    margin-bottom: 0;
+}
+
+.timeline-description {
+    font-size: 0.9375rem;
+    color: #4a4a4a;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-section {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 0;
+    margin-bottom: 2.5rem;
+}
+
+.home-section:last-child {
+    margin-bottom: 0;
+}
+
+.home-section h3 {
+    margin-bottom: 0;
+}
+
+.home-content {
+    margin-left: 0;
+}
+
+.home-content p {
+    margin-bottom: 0.5rem;
+}
+
+.home-content p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+    }
+
+    .sidebar {
+        position: static;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-links {
+        align-items: center;
+    }
+
+    .timeline-item {
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+    }
+
+    .timeline-subitem {
+        gap: 0.75rem;
+    }
+
+    .timeline-subitem-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
