@@ -31,11 +31,22 @@ nav a {
     font-weight: 400;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    transition: opacity 0.2s;
+    position: relative;
 }
 
-nav a:hover {
-    opacity: 0.6;
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1a1a1a;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 nav a.active {
@@ -118,11 +129,25 @@ nav a.active {
     color: #1a1a1a;
     text-decoration: none;
     font-size: 0.875rem;
-    transition: opacity 0.2s;
 }
 
-.profile-link:hover {
-    opacity: 0.6;
+.profile-link span {
+    position: relative;
+}
+
+.profile-link span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1a1a1a;
+    transition: width 0.3s ease;
+}
+
+.profile-link:hover span::after {
+    width: 100%;
 }
 
 .profile-link svg {
@@ -142,6 +167,81 @@ h2 {
     font-weight: 500;
     margin-bottom: 1.5rem;
     color: #1a1a1a;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.section-header h2 {
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+.next-page-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.next-page-btn:visited {
+    color: #1a1a1a;
+}
+
+.next-page-btn span {
+    position: relative;
+}
+
+.next-page-btn span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1a1a1a;
+    transition: width 0.3s ease;
+}
+
+.next-page-btn:hover span::after {
+    width: 100%;
+}
+
+.next-page-btn svg {
+    animation: bounceArrow 4s ease-in-out infinite;
+}
+
+@keyframes bounceArrow {
+    0%, 15% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(5px);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    35% {
+        transform: translateX(5px);
+    }
+    45%, 100% {
+        transform: translateX(0);
+    }
 }
 
 .cursor {
@@ -178,22 +278,43 @@ p {
 
 p a {
     color: #1a1a1a;
-    text-decoration: underline;
-    transition: opacity 0.2s;
+    text-decoration: none;
+    position: relative;
 }
 
-p a:hover {
-    opacity: 0.6;
+p a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #1a1a1a;
+}
+
+p a:hover::after {
+    width: 100%;
 }
 
 .no-underline {
     text-decoration: none;
     color: #000000;
-    transition: opacity 0.2s;
+    position: relative;
 }
 
-.no-underline:hover {
-    opacity: 0.6;
+.no-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+.no-underline:hover::after {
+    width: 100%;
 }
 
 .timeline {
@@ -206,7 +327,7 @@ p a:hover {
     position: absolute;
     left: 8px;
     top: 0;
-    bottom: 0;
+    bottom: -5rem;
     width: 2px;
     background-color: #e0e0e0;
 }
@@ -215,7 +336,7 @@ p a:hover {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     position: relative;
 }
 
@@ -270,7 +391,7 @@ p a:hover {
 .timeline-period {
     font-size: 1.125rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     color: #1a1a1a;
     line-height: 1.125rem;
 }
@@ -278,7 +399,7 @@ p a:hover {
 .timeline-subitem {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     align-items: start;
 }
 
@@ -304,7 +425,7 @@ p a:hover {
 .timeline-role {
     font-size: 0.875rem;
     color: #4a4a4a;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     line-height: 1.3;
 }
 
@@ -322,6 +443,114 @@ p a:hover {
     margin-top: 0.25rem;
     margin-bottom: 0;
     line-height: 1.6;
+}
+
+.link-preview-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: border-color 0.2s;
+    background-color: #FAFAFA;
+}
+
+.link-preview-card:hover {
+    border-color: #1a1a1a;
+}
+
+.link-preview-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.link-preview-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.link-preview-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.link-preview-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.link-preview-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    position: relative;
+}
+
+.link-preview-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1a1a1a;
+    transition: width 0.3s ease;
+}
+
+.link-preview-card:hover .link-preview-title::after {
+    width: 100%;
+}
+
+.link-preview-url {
+    font-size: 0.75rem;
+    color: #4a4a4a;
+}
+
+.link-preview-arrow {
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+.under-construction {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-top: 2rem;
+}
+
+.hammer {
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    display: inline-block;
+    animation: hammerSwing 1.5s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes hammerSwing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(25deg);
+    }
 }
 
 @keyframes fadeIn {
@@ -363,6 +592,128 @@ p a:hover {
 
 .home-section dd:last-child {
     margin-bottom: 0;
+}
+
+.project-category {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-category:first-of-type {
+    margin-top: 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: border-color 0.2s;
+}
+
+.project-card:hover {
+    border-color: #1a1a1a;
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-info {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 0.875rem;
+    color: #4a4a4a;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.project-area {
+    font-size: 0.8125rem;
+    color: #6a6a6a;
+    line-height: 1.4;
+    margin: 0.5rem 0 0.75rem 0;
+    font-style: italic;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0;
+}
+
+.tag {
+    font-size: 0.6875rem;
+    color: #4a4a4a;
+    background-color: #f0f0f0;
+    padding: 0.25rem 0.625rem;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.project-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #5a5a5a;
+    border: 1px solid #5a5a5a;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.project-btn svg {
+    flex-shrink: 0;
+}
+
+.project-btn:hover {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
 }
 
 @media (max-width: 768px) {
@@ -410,5 +761,10 @@ p a:hover {
     .timeline-subitem-logo {
         width: 40px;
         height: 40px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
