@@ -2,10 +2,11 @@
   "python": [
     {
       "title": "FriendFic Personalized Story Generation App",
-      "description": "A mobile app that generates daily short stories for friend groups, personalized to their humor, interests, and feedback.",
+      "description": "Mobile app that generates personalized short stories daily for friend groups, tailored to their unique humor, interests, and user feedback.",
       "area": "NLP, Generative AI, Personalization, LLM Fine-tuning, LoRA, PEFT, Huggingface Transformers, RAG, Word Embeddings, Vector Databases, PostgreSQL, FastAPI",
       "libs": ["Transformers", "PEFT", "BitsAndBytes", "PyTorch", "spaCy", "NLTK", "scikit-learn", "pandas", "NumPy"],
       "color": "#E8F4FF",
+      "status": "Work in Progress",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/fiction_repo" }
       ]
@@ -16,9 +17,11 @@
       "area": "Data Scraping, Feature Engineering, NLP, Word Embeddings, SemAxis, Cosine Similarity, TF-IDF, BERT Regression, LLM Fine-tuning, Statistical Analysis, Pearson Correlation, Paired T-tests, Krippendorff's Alpha, Inter-rater Reliability, Mixed-effects Regression",
       "libs": ["PyTorch", "Transformers", "spaCy", "Gensim", "SciPy", "statsmodels", "scikit-learn", "NLTK", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF4E8",
+      "status": "Recent",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/evidence_vs_intuition_nlp" },
-        { "label": "Jupyter", "url": "https://github.com/yoonoolee/evidence_vs_intuition_nlp/blob/master/Modeling/Evidence_and_Intuition_vs_Education.ipynb" }
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/evidence_vs_intuition_nlp/blob/master/Modeling/Evidence_and_Intuition_vs_Education.ipynb" },
+        { "label": "Paper", "url": "https://github.com/yoonoolee/evidence_vs_intuition_nlp/blob/master/A%20Bert-based%20Analysis%20of%20Evidence%20versus%20Intuition%20Rhetoric%20in%20U.S.%20House%20of%20Representatives%20and%20Constituent%20Education%20Levels.pdf" }
       ]
     },
     {
@@ -84,7 +87,8 @@
       "color": "#FFE5F3",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/classifying_politicians" },
-        { "label": "Jupyter", "url": "https://github.com/yoonoolee/classifying_politicians/blob/main/classifying_politicians.ipynb" }
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/classifying_politicians/blob/main/classifying_politicians.ipynb" },
+        { "label": "Paper", "url": "https://github.com/yoonoolee/classifying_politicians/blob/main/Classifying_Politicians.pdf" }
       ]
     },
     {
@@ -95,7 +99,8 @@
       "color": "#E5FFFF",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/qualifying_red_wine" },
-        { "label": "Jupyter", "url": "https://github.com/yoonoolee/qualifying_red_wine/blob/main/qualifying_red_wine.ipynb" }
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/qualifying_red_wine/blob/main/qualifying_red_wine.ipynb" },
+        { "label": "Paper", "url": "https://github.com/yoonoolee/qualifying_red_wine/blob/main/Qualifying_Red_Wine.pdf" }
       ]
     },
     {
@@ -139,7 +144,8 @@
       "color": "#E5FFE5",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/finding_submarines" },
-        { "label": "Jupyter", "url": "https://github.com/yoonoolee/finding_submarines/blob/main/finding_submarines.ipynb" }
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/finding_submarines/blob/main/finding_submarines.ipynb" },
+        { "label": "Paper", "url": "https://github.com/yoonoolee/finding_submarines/blob/main/Finding_Submarines.pdf" }
       ]
     },
     {
@@ -172,7 +178,8 @@
       "color": "#FFE5F0",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/compressed_image_recovery" },
-        { "label": "Jupyter", "url": "https://github.com/yoonoolee/compressed_image_recovery/blob/main/compressed_image_recovery.ipynb" }
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/compressed_image_recovery/blob/main/compressed_image_recovery.ipynb" },
+        { "label": "Paper", "url": "https://github.com/yoonoolee/compressed_image_recovery/blob/main/Compressed_Image_Recovery.pdf" }
       ]
     }
   ],
