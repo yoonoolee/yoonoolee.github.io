@@ -745,12 +745,24 @@ p a:hover::after {
     margin: 0;
 }
 
+.project-divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 1rem 0 0.75rem 0;
+}
+
+.project-section-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0 0 0.5rem 0;
+}
+
 .project-area {
-    font-size: 0.8125rem;
-    color: #6a6a6a;
-    line-height: 1.4;
-    margin: 0.5rem 0 0.75rem 0;
-    font-style: italic;
+    font-size: 0.875rem;
+    color: #4a4a4a;
+    line-height: 1.5;
+    margin: 0 0 0.75rem 0;
 }
 
 .project-tags {

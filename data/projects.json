@@ -3,8 +3,8 @@
     {
       "title": "FriendFic Personalized Story Generation App",
       "description": "A mobile app that generates daily short stories for friend groups, personalized to their humor, interests, and feedback.",
-      "area": "NLP, Generative AI, Personalization, LLM Fine-tuning, PEFT, Huggingface Transformers, RAG, Word Embeddings, Vector Databases, PostgreSQL, FastAPI",
-      "libs": ["pandas", "numpy", "sklearn", "PyTorch", "NLTK", "spaCy"],
+      "area": "NLP, Generative AI, Personalization, LLM Fine-tuning, LoRA, PEFT, Huggingface Transformers, RAG, Word Embeddings, Vector Databases, PostgreSQL, FastAPI",
+      "libs": ["Transformers", "PEFT", "BitsAndBytes", "PyTorch", "spaCy", "NLTK", "scikit-learn", "pandas", "NumPy"],
       "color": "#E8F4FF",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/fiction_repo" }
@@ -13,8 +13,8 @@
     {
       "title": "Evidence vs Intuition Rhetoric NLP Research",
       "description": "NLP Research studying the relationship between House of Representative rhetoric (evidence vs intuition-based language) and their constituents' education levels.",
-      "area": "Data Scraping, Feature Engineering, NLP, Word Embeddings, SemAxis, Cosine Similarity, TF-IDF, BERT Regression, LLM Fine-tuning, Statistical Analysis, Mixed-effects Regression",
-      "libs": ["pandas", "numpy", "spacy", "sklearn", "gensim", "NLTK", "PyTorch", "statsmodels"],
+      "area": "Data Scraping, Feature Engineering, NLP, Word Embeddings, SemAxis, Cosine Similarity, TF-IDF, BERT Regression, LLM Fine-tuning, Statistical Analysis, Pearson Correlation, Paired T-tests, Krippendorff's Alpha, Inter-rater Reliability, Mixed-effects Regression",
+      "libs": ["PyTorch", "Transformers", "spaCy", "Gensim", "SciPy", "statsmodels", "scikit-learn", "NLTK", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF4E8",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/evidence_vs_intuition_nlp" },
@@ -25,7 +25,7 @@
       "title": "Food.com Search Engine Project",
       "description": "An enhanced recipe search engine for food.com that supports complex descriptions or dietary restrictions.",
       "area": "NLP, TF-IDF, Cosine Similarity, Recommendation Systems",
-      "libs": ["pandas", "numpy", "nltk", "sklearn"],
+      "libs": ["scikit-learn", "NLTK", "pandas", "NumPy"],
       "color": "#FFE5E5",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/recipes_search_project" },
@@ -35,8 +35,8 @@
     {
       "title": "Classifying and Clustering Images",
       "description": "Visualize clusters of digit images using various dimensionality reduction techniques. Cluster images of different individuals' faces.",
-      "area": "Dimensionality Reduction Visualization, SVM, Multilayer Perceptron (MLP), Convolutional Neural Networks (CNN), KMeans Clustering, Random Forest Classification, PCA, TSNE, Local Linear Embeddings (LLE)",
-      "libs": ["numpy", "pandas", "scipy", "sklearn", "tensorflow.keras", "matplotlib"],
+      "area": "Dimensionality Reduction Visualization, SVM, Multilayer Perceptron (MLP), Convolutional Neural Networks (CNN), KMeans Clustering, Silhouette Score, Silhouette Visualization, Random Forest Classification, PCA, TSNE, Local Linear Embeddings (LLE)",
+      "libs": ["TensorFlow/Keras", "scikit-learn", "SciPy", "NumPy", "pandas", "Matplotlib"],
       "color": "#E5F3FF",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/classifying_and_clustering_images" },
@@ -46,8 +46,8 @@
     {
       "title": "Finding Regimes in Time Series",
       "description": "Identify the regimes in time series data for U.S. unemployment and year-over-year inflation rate using the CPI (Consumer Price Index).",
-      "area": "KMeans Clustering, Time Series Analysis",
-      "libs": ["numpy", "pandas", "sklearn", "matplotlib"],
+      "area": "KMeans Clustering, Silhouette Score, Silhouette Visualization, Inertia Metric, StandardScaler, Time Series Analysis",
+      "libs": ["scikit-learn", "Yellowbrick", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#E5FFE5",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/finding_regimes_in_time_series" },
@@ -57,8 +57,8 @@
     {
       "title": "Predicting Exchange Rate Using Time Series",
       "description": "Forecast the Japanese exchange rate using the previous 10 days of data.",
-      "area": "Random Forest Regression, Recurrent Neural Networks (RNN)",
-      "libs": ["pandas", "numpy", "sklearn", "tensorflow.keras", "matplotlib"],
+      "area": "Random Forest Regression, Recurrent Neural Networks (RNN), MSE, Movement Direction Accuracy, TimeSeriesSplit Cross-validation",
+      "libs": ["TensorFlow/Keras", "scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF3E5",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_exchange_rate_using_time_series" },
@@ -68,8 +68,8 @@
     {
       "title": "Predicting Insurance Purchase Using Neural Networks",
       "description": "Predict if a customer will purchase caravan insurance given their sociodemographic and product ownership data.",
-      "area": "Classification, Deep Neural Networks (DNN)",
-      "libs": ["pandas", "numpy", "sklearn", "tensorflow.keras", "matplotlib"],
+      "area": "Classification, Deep Neural Networks (DNN), AUC-ROC, Stratified Sampling, ELU Activation, SGD with Momentum, Batch Normalization, Early Stopping, L2 Regularization, Dropout",
+      "libs": ["TensorFlow/Keras", "scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#F3E5FF",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_insurance_purchase_using_neural_networks" },
@@ -79,8 +79,8 @@
     {
       "title": "Classifying Politicians",
       "description": "Classify 435 politicians as Democrat or Republican based on their votes for 16 bills.",
-      "area": "Linear Regression, Spectral Clustering",
-      "libs": ["numpy", "pandas", "scipy", "sklearn", "matplotlib"],
+      "area": "Linear Regression, Spectral Clustering, Accuracy, Gaussian Kernel, Graph Laplacian",
+      "libs": ["scikit-learn", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFE5F3",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/classifying_politicians" },
@@ -90,8 +90,8 @@
     {
       "title": "Qualifying Red Wine",
       "description": "Rate the quality of new wine samples based on their attributes on a 0 to 10 scale.",
-      "area": "Linear Regression, Gaussian RBF Regression, Laplacian Regression",
-      "libs": ["numpy", "pandas", "sklearn", "matplotlib"],
+      "area": "Linear Regression, Gaussian RBF Regression, Laplacian Regression, MSE, 5-fold Cross-validation, Hyperparameter Tuning",
+      "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#E5FFFF",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/qualifying_red_wine" },
@@ -101,8 +101,8 @@
     {
       "title": "Predicting NYSE Volume Using Time Series",
       "description": "Predict the next day's trading volume of Dow Jones Industrial Average using the historical volume, volatility, and returns.",
-      "area": "Random Forest Regression, Time Series Analysis",
-      "libs": ["pandas", "sklearn", "matplotlib"],
+      "area": "Random Forest Regression, Time Series Analysis, RMSE, TimeSeriesSplit, Hyperparameter Tuning, Lagged Features, Persistence Baseline",
+      "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFFFE5",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predict_NYSE_volume_using_time_series" },
@@ -112,8 +112,8 @@
     {
       "title": "Predicting Credit Card Defaults",
       "description": "Predict whether a credit card owner will default based on their balance, income, and student status.",
-      "area": "Feature Engineering, Logistic Regression, SGD Classification",
-      "libs": ["pandas", "numpy", "sklearn", "matplotlib"],
+      "area": "Feature Engineering, Logistic Regression, SGD Classification, ROC-AUC, Precision-Recall Curves, 10-fold Cross-validation, Threshold Tuning, Class Balancing",
+      "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFE5E5",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_credit_card_defaults" },
@@ -123,8 +123,8 @@
     {
       "title": "Predicting Housing Prices in King County",
       "description": "Evaluate the performance of various regression models in predicting house prices in King County, WA based on property features such as square footage, condition, location, bedrooms, and bathrooms.",
-      "area": "Feature Engineering, Linear Regression, Elastic Net Regression, SVM Regression, AdaBoost Regression, Random Forest Regression",
-      "libs": ["numpy", "pandas", "matplotlib", "sklearn"],
+      "area": "Feature Engineering, Linear Regression, Elastic Net Regression, SVM Regression, AdaBoost Regression, Random Forest Regression, RMSE, GridSearchCV, Cross-validation, Overfitting Analysis",
+      "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#E5F3FF",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_housing_prices_in_king_county" },
@@ -134,8 +134,8 @@
     {
       "title": "Finding Submarines",
       "description": "Produce a 2D and 3D path of a submarine given noisy acoustic data over 24 hours in 30-minute increments.",
-      "area": "Signal Processing, Fourier Transform, Gaussian Filtering",
-      "libs": ["numpy", "plotly", "pandas", "matplotlib"],
+      "area": "Signal Processing, 3D FFT, Fourier Transform, Frequency Domain Filtering, Gaussian Bandpass Filter, Inverse FFT, 3D Isosurface Visualization",
+      "libs": ["NumPy", "Plotly", "pandas", "Matplotlib"],
       "color": "#E5FFE5",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/finding_submarines" },
@@ -145,8 +145,8 @@
     {
       "title": "Digits Classifier",
       "description": "Identify the digit in an image and determine the most effective classification model for the task.",
-      "area": "SVM Classification, RBF Kernel, Random Forest Classification, Extra Trees Classification, AdaBoost Classification, Gradient Boosting Classification, Voting Classification",
-      "libs": ["numpy", "pandas", "scipy", "sklearn", "matplotlib"],
+      "area": "SVM Classification, RBF Kernel, Random Forest Classification, Extra Trees Classification, AdaBoost Classification, Gradient Boosting Classification, Voting Classification, Accuracy, GridSearchCV, RandomizedSearchCV, Stacking",
+      "libs": ["scikit-learn", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF3E5",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/digits_classifier" },
@@ -156,8 +156,8 @@
     {
       "title": "Predicting Housing Prices",
       "description": "Predict house values in California census districts using coordinates, income, age, population, and property features.",
-      "area": "Feature Engineering, Linear Regression, Decision Tree Regression, Random Forest Regression, Ridge Regression",
-      "libs": ["numpy", "pandas", "scipy", "sklearn", "matplotlib"],
+      "area": "Feature Engineering, Linear Regression, Decision Tree Regression, Random Forest Regression, Ridge Regression, RMSE, MAE, GridSearchCV, RandomizedSearchCV, 4-fold Cross-validation, Polynomial Features",
+      "libs": ["scikit-learn", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#F3E5FF",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_housing_prices" },
@@ -167,8 +167,8 @@
     {
       "title": "Compressed Image Recovery",
       "description": "Investigate the compressibility of an image and recover a compressed image.",
-      "area": "Lasso Regression, Discrete Cosine Transform",
-      "libs": ["numpy", "scipy", "skimage", "matplotlib", "cvxpy", "cvsopt"],
+      "area": "Lasso Regression, Discrete Cosine Transform, Convex Optimization, Compressed Sensing",
+      "libs": ["CVXPY", "SciPy", "NumPy", "scikit-image", "Matplotlib", "CVXOPT"],
       "color": "#FFE5F0",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/compressed_image_recovery" },
@@ -181,7 +181,7 @@
       "title": "Danny's Diner",
       "description": "Explored a restaurant's customer sales data to derive insights on visiting patterns, purchasing trends, and menu popularity.",
       "area": "Aggregate functions, window functions, filtering, conditional expressions",
-      "libs": ["JOIN", "GROUP BY", "DENSE_RANK", "PARTITION"],
+      "libs": ["Window Functions", "Aggregate Functions", "Joins", "Ranking Functions"],
       "color": "#FFE5F3",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/dannys_diner" },

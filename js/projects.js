@@ -32,8 +32,15 @@ function createProjectCard({ title, description, area, libs, color, buttons }) {
             <div class="project-info">
                 <h4 class="project-title">${title}</h4>
                 <p class="project-description">${description}</p>
+
+                <div class="project-divider"></div>
+                <p class="project-section-label">Technologies & Techniques</p>
                 <p class="project-area">${area}</p>
+
+                <div class="project-divider"></div>
+                <p class="project-section-label">Tools & Libraries</p>
                 <div class="project-tags">${libsHTML}</div>
+
                 ${buttonsHTML ? `<div class="project-buttons">${buttonsHTML}</div>` : ''}
             </div>
         </div>
