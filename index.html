@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avery Lee</title>
+    <title>Avery Lee - ML Engineer & Data Scientist</title>
+    <meta name="description" content="Avery Lee is a Master's student at UC Berkeley studying Machine Learning & Data Science, and Cofounder & CTO at Cherrytree.">
+
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="Avery Lee - ML Engineer & Data Scientist">
+    <meta property="og:description" content="Master's student at UC Berkeley studying Machine Learning & Data Science. Cofounder & CTO at Cherrytree.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yoonoolee.github.io">
+    <meta property="og:image" content="https://yoonoolee.github.io/images/profile_pic.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="shared.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
@@ -26,7 +36,7 @@
                     <h2><span id="typed-text"></span><span class="cursor">|</span></h2>
                     <a href="experience.html" class="next-page-btn">
                         <span>Experience</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
@@ -66,66 +76,5 @@
             </section>
         </main>
     </div>
-
-    <script>
-        (() => {
-            const phrases = [
-                "Avery!",
-                "a Master's Student @ UC Berkeley",
-                "Cofounder & CTO @ Cherrytree",
-                "excited for you to check out my portfolio"
-            ];
-
-            const element = document.getElementById('typed-text');
-            const prefix = "Hi, I'm ";
-
-            let state = {
-                phraseIndex: 0,
-                charIndex: 0,
-                isDeleting: false,
-                isTypingPrefix: true,
-                prefixIndex: 0,
-                completedCycle: false
-            };
-
-            function type() {
-                if (state.isTypingPrefix) {
-                    element.textContent = prefix.substring(0, state.prefixIndex + 1);
-                    state.prefixIndex++;
-
-                    if (state.prefixIndex === prefix.length) {
-                        state.isTypingPrefix = false;
-                        setTimeout(type, 500);
-                    } else {
-                        setTimeout(type, 75);
-                    }
-                    return;
-                }
-
-                const currentPhrase = phrases[state.phraseIndex];
-                const text = currentPhrase.substring(0, state.charIndex + (state.isDeleting ? -1 : 1));
-
-                element.textContent = prefix + text;
-                state.charIndex += state.isDeleting ? -1 : 1;
-
-                let delay = state.isDeleting ? 25 : (state.phraseIndex === 0 ? 75 : 50);
-
-                if (!state.isDeleting && state.charIndex === currentPhrase.length) {
-                    if (state.phraseIndex === 0 && state.completedCycle) return;
-                    delay = 2000;
-                    state.isDeleting = true;
-                } else if (state.isDeleting && state.charIndex === 0) {
-                    state.isDeleting = false;
-                    state.phraseIndex = (state.phraseIndex + 1) % phrases.length;
-                    if (state.phraseIndex === 0) state.completedCycle = true;
-                    delay = 500;
-                }
-
-                setTimeout(type, delay);
-            }
-
-            window.addEventListener('load', () => setTimeout(type, 1000));
-        })();
-    </script>
 </body>
 </html>

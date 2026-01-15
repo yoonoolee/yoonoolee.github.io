@@ -1,3 +1,55 @@
+/* ============================================
+   CSS CUSTOM PROPERTIES
+   ============================================ */
+:root {
+    /* Colors */
+    --color-primary: #1a1a1a;
+    --color-primary-dark: #000000;
+    --color-background: #FAFAFA;
+    --color-card-background: #fff;
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #4a4a4a;
+    --color-text-tertiary: #6a6a6a;
+    --color-border: #e0e0e0;
+    --color-border-hover: #1a1a1a;
+    --color-tag-background: #f0f0f0;
+    --color-button-background: #5a5a5a;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 2rem;
+    --spacing-3xl: 3rem;
+    --spacing-4xl: 4rem;
+
+    /* Font sizes */
+    --font-size-xs: 0.6875rem;
+    --font-size-sm: 0.75rem;
+    --font-size-base: 0.875rem;
+    --font-size-md: 0.9375rem;
+    --font-size-lg: 1rem;
+    --font-size-xl: 1.125rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.75rem;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-default: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Border radius */
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-full: 50%;
+}
+
+/* ============================================
+   GLOBAL RESET & BASE STYLES
+   ============================================ */
 * {
     margin: 0;
     padding: 0;
@@ -5,76 +57,108 @@
 }
 
 html {
-    background-color: #FAFAFA;
+    background-color: var(--color-background);
     min-height: 100%;
 }
 
 body {
     font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    background-color: #FAFAFA;
-    color: #1a1a1a;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
     line-height: 1.6;
     min-height: 100vh;
 }
 
+/* ============================================
+   ACCESSIBILITY - REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ============================================
+   HEADER & NAVIGATION
+   ============================================ */
 header {
-    padding: 2rem 0;
-    background-color: #FAFAFA;
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-background);
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: var(--spacing-2xl);
     font-family: 'DM Sans', sans-serif;
 }
 
 nav a {
-    color: #1a1a1a;
+    color: var(--color-text-primary);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: var(--font-size-base);
     font-weight: 400;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     position: relative;
 }
 
-nav a::after {
+/* Reusable underline animation pattern */
+nav a::after,
+.profile-link span::after,
+.next-page-btn span::after {
     content: '';
     position: absolute;
     bottom: -2px;
     left: 0;
     width: 0;
     height: 1px;
-    background-color: #1a1a1a;
-    transition: width 0.3s ease;
+    background-color: var(--color-primary);
+    transition: width var(--transition-default);
 }
 
-nav a:hover::after {
+nav a:hover::after,
+nav a:focus-visible::after {
     width: 100%;
+}
+
+/* Focus styles for accessibility */
+nav a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
 }
 
 nav a.active {
     font-weight: 900;
 }
 
+/* ============================================
+   LAYOUT CONTAINERS
+   ============================================ */
 .container {
     max-width: 1080px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 var(--spacing-2xl);
 }
 
 .main-container {
     display: grid;
     grid-template-columns: 280px 1fr;
-    gap: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    gap: var(--spacing-3xl);
+    padding-top: var(--spacing-3xl);
+    padding-bottom: var(--spacing-4xl);
 }
 
+/* ============================================
+   SIDEBAR & PROFILE
+   ============================================ */
 .sidebar {
     position: sticky;
-    top: 0.5rem;
+    top: var(--spacing-sm);
     height: fit-content;
 }
 
@@ -130,29 +214,27 @@ nav a.active {
 .profile-link {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    color: #1a1a1a;
+    gap: var(--spacing-sm);
+    color: var(--color-text-primary);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: var(--font-size-base);
 }
 
 .profile-link span {
     position: relative;
 }
 
-.profile-link span::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: #1a1a1a;
-    transition: width 0.3s ease;
+/* Note: ::after is defined in reusable pattern above */
+
+.profile-link:hover span::after,
+.profile-link:focus-visible span::after {
+    width: 100%;
 }
 
-.profile-link:hover span::after {
-    width: 100%;
+.profile-link:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+    border-radius: var(--radius-sm);
 }
 
 .profile-link svg {
@@ -192,10 +274,10 @@ h2 {
 .next-page-btn {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    color: #1a1a1a;
+    gap: var(--spacing-sm);
+    color: var(--color-text-primary);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: var(--font-size-base);
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -205,26 +287,24 @@ h2 {
 }
 
 .next-page-btn:visited {
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .next-page-btn span {
     position: relative;
 }
 
-.next-page-btn span::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: #1a1a1a;
-    transition: width 0.3s ease;
+/* Note: ::after is defined in reusable pattern above */
+
+.next-page-btn:hover span::after,
+.next-page-btn:focus-visible span::after {
+    width: 100%;
 }
 
-.next-page-btn:hover span::after {
-    width: 100%;
+.next-page-btn:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+    border-radius: var(--radius-sm);
 }
 
 .next-page-btn svg {
@@ -428,7 +508,7 @@ p a:hover::after {
 }
 
 .timeline-description + .timeline-role {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 .timeline-description {

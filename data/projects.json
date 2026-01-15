@@ -1,0 +1,192 @@
+{
+  "python": [
+    {
+      "title": "FriendFic Personalized Story Generation App",
+      "description": "A mobile app that generates daily short stories for friend groups, personalized to their humor, interests, and feedback.",
+      "area": "NLP, Generative AI, Personalization, LLM Fine-tuning, PEFT, Huggingface Transformers, RAG, Word Embeddings, Vector Databases, PostgreSQL, FastAPI",
+      "libs": ["pandas", "numpy", "sklearn", "PyTorch", "NLTK", "spaCy"],
+      "color": "#E8F4FF",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/fiction_repo" }
+      ]
+    },
+    {
+      "title": "Evidence vs Intuition Rhetoric NLP Research",
+      "description": "NLP Research studying the relationship between House of Representative rhetoric (evidence vs intuition-based language) and their constituents' education levels.",
+      "area": "Data Scraping, Feature Engineering, NLP, Word Embeddings, SemAxis, Cosine Similarity, TF-IDF, BERT Regression, LLM Fine-tuning, Statistical Analysis, Mixed-effects Regression",
+      "libs": ["pandas", "numpy", "spacy", "sklearn", "gensim", "NLTK", "PyTorch", "statsmodels"],
+      "color": "#FFF4E8",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/evidence_vs_intuition_nlp" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/evidence_vs_intuition_nlp/blob/master/Modeling/Evidence_and_Intuition_vs_Education.ipynb" }
+      ]
+    },
+    {
+      "title": "Food.com Search Engine Project",
+      "description": "An enhanced recipe search engine for food.com that supports complex descriptions or dietary restrictions.",
+      "area": "NLP, TF-IDF, Cosine Similarity, Recommendation Systems",
+      "libs": ["pandas", "numpy", "nltk", "sklearn"],
+      "color": "#FFE5E5",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/recipes_search_project" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/recipes_search_project/blob/main/recipes_final.ipynb" }
+      ]
+    },
+    {
+      "title": "Classifying and Clustering Images",
+      "description": "Visualize clusters of digit images using various dimensionality reduction techniques. Cluster images of different individuals' faces.",
+      "area": "Dimensionality Reduction Visualization, SVM, Multilayer Perceptron (MLP), Convolutional Neural Networks (CNN), KMeans Clustering, Random Forest Classification, PCA, TSNE, Local Linear Embeddings (LLE)",
+      "libs": ["numpy", "pandas", "scipy", "sklearn", "tensorflow.keras", "matplotlib"],
+      "color": "#E5F3FF",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/classifying_and_clustering_images" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/classifying_and_clustering_images/blob/main/classifying_and_clustering_images.ipynb" }
+      ]
+    },
+    {
+      "title": "Finding Regimes in Time Series",
+      "description": "Identify the regimes in time series data for U.S. unemployment and year-over-year inflation rate using the CPI (Consumer Price Index).",
+      "area": "KMeans Clustering, Time Series Analysis",
+      "libs": ["numpy", "pandas", "sklearn", "matplotlib"],
+      "color": "#E5FFE5",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/finding_regimes_in_time_series" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/finding_regimes_in_time_series/blob/main/finding_regimes_in_time_series.ipynb" }
+      ]
+    },
+    {
+      "title": "Predicting Exchange Rate Using Time Series",
+      "description": "Forecast the Japanese exchange rate using the previous 10 days of data.",
+      "area": "Random Forest Regression, Recurrent Neural Networks (RNN)",
+      "libs": ["pandas", "numpy", "sklearn", "tensorflow.keras", "matplotlib"],
+      "color": "#FFF3E5",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_exchange_rate_using_time_series" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_exchange_rate_using_time_series/blob/main/predicting_exchange_rate_using_time_series.ipynb" }
+      ]
+    },
+    {
+      "title": "Predicting Insurance Purchase Using Neural Networks",
+      "description": "Predict if a customer will purchase caravan insurance given their sociodemographic and product ownership data.",
+      "area": "Classification, Deep Neural Networks (DNN)",
+      "libs": ["pandas", "numpy", "sklearn", "tensorflow.keras", "matplotlib"],
+      "color": "#F3E5FF",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_insurance_purchase_using_neural_networks" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_insurance_purchase_using_neural_networks/blob/main/predicting_insurance_purchase_using_neural_networks.ipynb" }
+      ]
+    },
+    {
+      "title": "Classifying Politicians",
+      "description": "Classify 435 politicians as Democrat or Republican based on their votes for 16 bills.",
+      "area": "Linear Regression, Spectral Clustering",
+      "libs": ["numpy", "pandas", "scipy", "sklearn", "matplotlib"],
+      "color": "#FFE5F3",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/classifying_politicians" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/classifying_politicians/blob/main/classifying_politicians.ipynb" }
+      ]
+    },
+    {
+      "title": "Qualifying Red Wine",
+      "description": "Rate the quality of new wine samples based on their attributes on a 0 to 10 scale.",
+      "area": "Linear Regression, Gaussian RBF Regression, Laplacian Regression",
+      "libs": ["numpy", "pandas", "sklearn", "matplotlib"],
+      "color": "#E5FFFF",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/qualifying_red_wine" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/qualifying_red_wine/blob/main/qualifying_red_wine.ipynb" }
+      ]
+    },
+    {
+      "title": "Predicting NYSE Volume Using Time Series",
+      "description": "Predict the next day's trading volume of Dow Jones Industrial Average using the historical volume, volatility, and returns.",
+      "area": "Random Forest Regression, Time Series Analysis",
+      "libs": ["pandas", "sklearn", "matplotlib"],
+      "color": "#FFFFE5",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/predict_NYSE_volume_using_time_series" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/predict_NYSE_volume_using_time_series/blob/main/predict_nyse_volume_using_time_series.ipynb" }
+      ]
+    },
+    {
+      "title": "Predicting Credit Card Defaults",
+      "description": "Predict whether a credit card owner will default based on their balance, income, and student status.",
+      "area": "Feature Engineering, Logistic Regression, SGD Classification",
+      "libs": ["pandas", "numpy", "sklearn", "matplotlib"],
+      "color": "#FFE5E5",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_credit_card_defaults" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_credit_card_defaults/blob/main/predicting_credit_card_defaults.ipynb" }
+      ]
+    },
+    {
+      "title": "Predicting Housing Prices in King County",
+      "description": "Evaluate the performance of various regression models in predicting house prices in King County, WA based on property features such as square footage, condition, location, bedrooms, and bathrooms.",
+      "area": "Feature Engineering, Linear Regression, Elastic Net Regression, SVM Regression, AdaBoost Regression, Random Forest Regression",
+      "libs": ["numpy", "pandas", "matplotlib", "sklearn"],
+      "color": "#E5F3FF",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_housing_prices_in_king_county" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_housing_prices_in_king_county/blob/main/predicting_housing_prices_in_king_county.ipynb" }
+      ]
+    },
+    {
+      "title": "Finding Submarines",
+      "description": "Produce a 2D and 3D path of a submarine given noisy acoustic data over 24 hours in 30-minute increments.",
+      "area": "Signal Processing, Fourier Transform, Gaussian Filtering",
+      "libs": ["numpy", "plotly", "pandas", "matplotlib"],
+      "color": "#E5FFE5",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/finding_submarines" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/finding_submarines/blob/main/finding_submarines.ipynb" }
+      ]
+    },
+    {
+      "title": "Digits Classifier",
+      "description": "Identify the digit in an image and determine the most effective classification model for the task.",
+      "area": "SVM Classification, RBF Kernel, Random Forest Classification, Extra Trees Classification, AdaBoost Classification, Gradient Boosting Classification, Voting Classification",
+      "libs": ["numpy", "pandas", "scipy", "sklearn", "matplotlib"],
+      "color": "#FFF3E5",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/digits_classifier" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/digits_classifier/blob/main/digits_classifier.ipynb" }
+      ]
+    },
+    {
+      "title": "Predicting Housing Prices",
+      "description": "Predict house values in California census districts using coordinates, income, age, population, and property features.",
+      "area": "Feature Engineering, Linear Regression, Decision Tree Regression, Random Forest Regression, Ridge Regression",
+      "libs": ["numpy", "pandas", "scipy", "sklearn", "matplotlib"],
+      "color": "#F3E5FF",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_housing_prices" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_housing_prices/blob/main/predicting_housing_prices.ipynb" }
+      ]
+    },
+    {
+      "title": "Compressed Image Recovery",
+      "description": "Investigate the compressibility of an image and recover a compressed image.",
+      "area": "Lasso Regression, Discrete Cosine Transform",
+      "libs": ["numpy", "scipy", "skimage", "matplotlib", "cvxpy", "cvsopt"],
+      "color": "#FFE5F0",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/compressed_image_recovery" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/compressed_image_recovery/blob/main/compressed_image_recovery.ipynb" }
+      ]
+    }
+  ],
+  "sql": [
+    {
+      "title": "Danny's Diner",
+      "description": "Explored a restaurant's customer sales data to derive insights on visiting patterns, purchasing trends, and menu popularity.",
+      "area": "Aggregate functions, window functions, filtering, conditional expressions",
+      "libs": ["JOIN", "GROUP BY", "DENSE_RANK", "PARTITION"],
+      "color": "#FFE5F3",
+      "buttons": [
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/dannys_diner" },
+        { "label": "Jupyter", "url": "https://github.com/yoonoolee/dannys_diner/blob/main/dannys_diner.ipynb" }
+      ]
+    }
+  ]
+}
