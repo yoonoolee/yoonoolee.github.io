@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #FAFAFA;
+    min-height: 100%;
+}
+
 body {
     font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     background-color: #FAFAFA;
@@ -298,23 +303,12 @@ p a:hover::after {
 
 .no-underline {
     text-decoration: none;
+    color: #1a1a1a;
+}
+
+.no-underline:hover {
     color: #000000;
-    position: relative;
-}
-
-.no-underline::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: #000000;
-    transition: width 0.3s ease;
-}
-
-.no-underline:hover::after {
-    width: 100%;
+    font-weight: 500;
 }
 
 .timeline {
@@ -594,6 +588,20 @@ p a:hover::after {
     margin-bottom: 0;
 }
 
+.home-section a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.home-section a:visited {
+    color: #1a1a1a;
+}
+
+.home-section a:hover {
+    color: #000000;
+    font-weight: 500;
+}
+
 .project-category {
     font-size: 1.125rem;
     font-weight: 500;
@@ -608,7 +616,7 @@ p a:hover::after {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -718,14 +726,25 @@ p a:hover::after {
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    header {
+        padding: 1.5rem 0;
+    }
+
+    .container {
+        padding: 0 1.5rem;
     }
 
     .main-container {
         grid-template-columns: 1fr;
         padding-top: 2rem;
+        gap: 2rem;
     }
 
     .sidebar {
@@ -743,6 +762,10 @@ p a:hover::after {
     .profile-pic {
         width: 150px;
         height: 150px;
+    }
+
+    .profile-location {
+        justify-content: center;
     }
 
     .profile-links {
@@ -766,5 +789,37 @@ p a:hover::after {
     .project-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .main-container {
+        gap: 1.5rem;
+    }
+
+    nav {
+        gap: 0.75rem;
+    }
+
+    .profile-pic-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-pic {
+        width: 135px;
+        height: 135px;
+    }
+
+    .project-grid {
+        gap: 1rem;
+    }
+
+    .project-card {
+        font-size: 0.9rem;
     }
 }
