@@ -7,7 +7,7 @@
  * @param {Object} project - Project data object
  * @returns {string} HTML string for project card
  */
-function createProjectCard({ title, description, area, libs, color, status, buttons }) {
+function createProjectCard({ title, description, area, libs, color, image, status, buttons }) {
     const libsHTML = libs
         .map(lib => `<span class="tag">${lib}</span>`)
         .join('');
@@ -42,9 +42,13 @@ function createProjectCard({ title, description, area, libs, color, status, butt
 
     const statusHTML = status ? `<span class="project-status-tag">${status}</span>` : '';
 
+    const imageStyle = image
+        ? `background-image: url('${image}'); background-color: ${color};`
+        : `background-color: ${color};`;
+
     return `
         <div class="project-card">
-            <div class="project-image" style="background-color: ${color};" role="presentation">
+            <div class="project-image" style="${imageStyle}" role="presentation">
                 ${statusHTML}
             </div>
             <div class="project-info">

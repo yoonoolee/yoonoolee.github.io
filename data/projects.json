@@ -6,6 +6,7 @@
       "area": "NLP, Generative AI, Personalization, LLM Fine-tuning, LoRA, PEFT, Huggingface Transformers, RAG, Word Embeddings, Vector Databases, PostgreSQL, FastAPI",
       "libs": ["Transformers", "PEFT", "BitsAndBytes", "PyTorch", "spaCy", "NLTK", "scikit-learn", "pandas", "NumPy"],
       "color": "#E8F4FF",
+      "image": "images/FriendFic_Personalized_Story_Generation_App.png",
       "status": "Work in Progress",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/fiction_repo" }
@@ -17,6 +18,7 @@
       "area": "NLP, BERT Regression, LLM Fine-tuning, Word Embeddings, TF-IDF, Cosine Similarity, SemAxis, Feature Engineering, Data Scraping, Statistical Analysis, Mixed-effects Regression, Pearson Correlation, Paired T-tests, Inter-rater Reliability",
       "libs": ["PyTorch", "Transformers", "spaCy", "Gensim", "SciPy", "statsmodels", "scikit-learn", "NLTK", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF4E8",
+      "image": "images/Evidence_vs_Intuition_Rhetoric_NLP_Research.png",
       "status": "Recent",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/evidence_vs_intuition_nlp" },
@@ -30,6 +32,7 @@
       "area": "NLP, Recommendation Systems, TF-IDF, Cosine Similarity, Text Preprocessing, Tokenization, Negative Query Handling",
       "libs": ["scikit-learn", "NLTK", "pandas", "NumPy"],
       "color": "#FFE5E5",
+      "image": "images/Food.com_Search_Engine_Project.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/recipes_search_project" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/recipes_search_project/blob/main/recipes_final.ipynb" }
@@ -41,6 +44,7 @@
       "area": "Image Classification, Convolutional Neural Networks (CNN), Multilayer Perceptron (MLP), SVM, Random Forest Classification, KMeans Clustering, Dimensionality Reduction, PCA, TSNE, Local Linear Embeddings (LLE), Silhouette Score",
       "libs": ["TensorFlow/Keras", "scikit-learn", "SciPy", "NumPy", "pandas", "Matplotlib"],
       "color": "#E5F3FF",
+      "image": "images/Classifying_and_Clustering_Images.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/classifying_and_clustering_images" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/classifying_and_clustering_images/blob/main/classifying_and_clustering_images.ipynb" }
@@ -52,17 +56,19 @@
       "area": "Time Series Analysis, KMeans Clustering, Silhouette Score, Silhouette Visualization, Inertia Metric, Feature Engineering",
       "libs": ["scikit-learn", "Yellowbrick", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#E5FFE5",
+      "image": "images/Finding_Regimes_in_Time_Series.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/finding_regimes_in_time_series" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/finding_regimes_in_time_series/blob/main/finding_regimes_in_time_series.ipynb" }
       ]
     },
     {
-      "title": "Predicting Exchange Rate Using Time Series",
+      "title": "Predicting Exchange Rate Using Time Series and Neural Networks",
       "description": "Forecast the Japanese exchange rate using the previous 10 days of data.",
       "area": "Time Series Analysis, Recurrent Neural Networks (RNN), Random Forest Regression, Cross-validation, MSE, Accuracy",
       "libs": ["TensorFlow/Keras", "scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF3E5",
+      "image": "images/Predicting_Exchange_Rate_Using_Time_Series.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_exchange_rate_using_time_series" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_exchange_rate_using_time_series/blob/main/predicting_exchange_rate_using_time_series.ipynb" }
@@ -74,6 +80,7 @@
       "area": "Classification, Deep Neural Networks (DNN), AUC-ROC, Stratified Sampling, ELU Activation, SGD, Batch Normalization, Early Stopping, Regularization, Dropout",
       "libs": ["TensorFlow/Keras", "scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#F3E5FF",
+      "image": "images/Predicting_Insurance_Purchase_Using_Neural_Networks.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_insurance_purchase_using_neural_networks" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_insurance_purchase_using_neural_networks/blob/main/predicting_insurance_purchase_using_neural_networks.ipynb" }
@@ -85,6 +92,7 @@
       "area": "Classification, Spectral Clustering, Graph Laplacian, Gaussian Kernel, Linear Regression, Accuracy",
       "libs": ["scikit-learn", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFE5F3",
+      "image": "images/Classifying_Politicians.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/classifying_politicians" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/classifying_politicians/blob/main/classifying_politicians.ipynb" },
@@ -97,6 +105,7 @@
       "area": "Linear Regression, Kernel Regression, MSE, Cross-validation, Hyperparameter Tuning",
       "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#E5FFFF",
+      "image": "images/Qualifying_Red_Wine.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/qualifying_red_wine" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/qualifying_red_wine/blob/main/qualifying_red_wine.ipynb" },
@@ -109,6 +118,7 @@
       "area": "Time Series Analysis, Random Forest Regression, RMSE, Hyperparameter Tuning",
       "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFFFE5",
+      "image": "images/Predicting_NYSE_Volume_Using_Time_Series.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predict_NYSE_volume_using_time_series" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/predict_NYSE_volume_using_time_series/blob/main/predict_nyse_volume_using_time_series.ipynb" }
@@ -120,6 +130,7 @@
       "area": "Classification, Logistic Regression, SGD Classification, Feature Engineering, ROC-AUC, Precision, Recall, Cross-validation",
       "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFE5E5",
+      "image": "images/Predicting_Credit_Card_Defaults.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_credit_card_defaults" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_credit_card_defaults/blob/main/predicting_credit_card_defaults.ipynb" }
@@ -131,6 +142,7 @@
       "area": "Regression, Linear Regression, Elastic Net Regression, SVM Regression, AdaBoost Regression, Random Forest Regression, Feature Engineering, RMSE, Cross-validation",
       "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#E5F3FF",
+      "image": "images/Predicting_Housing_Prices_in_King_County.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_housing_prices_in_king_county" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_housing_prices_in_king_county/blob/main/predicting_housing_prices_in_king_county.ipynb" }
@@ -142,6 +154,7 @@
       "area": "Signal Processing, Fast Fourier Transform (FFT), Frequency Domain Filtering, Gaussian Bandpass Filter, Inverse FFT, 3D Isosurface Visualization",
       "libs": ["NumPy", "Plotly", "pandas", "Matplotlib"],
       "color": "#E5FFE5",
+      "image": "images/Finding_Submarines.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/finding_submarines" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/finding_submarines/blob/main/finding_submarines.ipynb" },
@@ -154,6 +167,7 @@
       "area": "Image Classification, SVM Classification, RBF Kernel, Ensemble Methods, Random Forest, Extra Trees, AdaBoost, Gradient Boosting, Voting Classifier, Accuracy, Cross-validation",
       "libs": ["scikit-learn", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF3E5",
+      "image": "images/Digits_Classifier.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/digits_classifier" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/digits_classifier/blob/main/digits_classifier.ipynb" }
@@ -165,6 +179,7 @@
       "area": "Regression, Linear Regression, Decision Tree Regression, Random Forest Regression, Ridge Regression, Feature Engineering, Polynomial Features, RMSE, MAE, Cross-validation",
       "libs": ["scikit-learn", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#F3E5FF",
+      "image": "images/Predicting_Housing_Prices_in_California.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/predicting_housing_prices" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/predicting_housing_prices/blob/main/predicting_housing_prices.ipynb" }
@@ -176,6 +191,7 @@
       "area": "Compressed Sensing, Convex Optimization, Discrete Cosine Transform (DCT), Lasso Regression",
       "libs": ["CVXPY", "SciPy", "NumPy", "scikit-image", "Matplotlib", "CVXOPT"],
       "color": "#FFE5F0",
+      "image": "images/Compressed_Image_Recovery.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/compressed_image_recovery" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/compressed_image_recovery/blob/main/compressed_image_recovery.ipynb" },
@@ -190,6 +206,7 @@
       "area": "Aggregate functions, window functions, filtering, conditional expressions",
       "libs": ["JOIN", "GROUP BY", "DENSE_RANK", "PARTITION"],
       "color": "#FFE5F3",
+      "image": "images/Dannys_Diner.png",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/dannys_diner" },
         { "label": "Jupyter", "url": "https://github.com/yoonoolee/dannys_diner/blob/main/dannys_diner.ipynb" }
