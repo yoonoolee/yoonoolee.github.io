@@ -14,7 +14,7 @@
     {
       "title": "Evidence vs Intuition Rhetoric NLP Research",
       "description": "NLP Research studying the relationship between House of Representative rhetoric (evidence vs intuition-based language) and their constituents' education levels.",
-      "area": "Data Scraping, Feature Engineering, NLP, Word Embeddings, SemAxis, Cosine Similarity, TF-IDF, BERT Regression, LLM Fine-tuning, Statistical Analysis, Pearson Correlation, Paired T-tests, Krippendorff's Alpha, Inter-rater Reliability, Mixed-effects Regression",
+      "area": "NLP, BERT Regression, LLM Fine-tuning, Word Embeddings, TF-IDF, Cosine Similarity, SemAxis, Feature Engineering, Data Scraping, Statistical Analysis, Mixed-effects Regression, Pearson Correlation, Paired T-tests, Inter-rater Reliability",
       "libs": ["PyTorch", "Transformers", "spaCy", "Gensim", "SciPy", "statsmodels", "scikit-learn", "NLTK", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF4E8",
       "status": "Recent",
@@ -27,7 +27,7 @@
     {
       "title": "Food.com Search Engine Project",
       "description": "An enhanced recipe search engine for food.com that supports complex descriptions or dietary restrictions.",
-      "area": "NLP, TF-IDF, Cosine Similarity, Recommendation Systems",
+      "area": "NLP, Recommendation Systems, TF-IDF, Cosine Similarity, Text Preprocessing, Tokenization, Negative Query Handling",
       "libs": ["scikit-learn", "NLTK", "pandas", "NumPy"],
       "color": "#FFE5E5",
       "buttons": [
@@ -38,7 +38,7 @@
     {
       "title": "Classifying and Clustering Images",
       "description": "Visualize clusters of digit images using various dimensionality reduction techniques. Cluster images of different individuals' faces.",
-      "area": "Dimensionality Reduction Visualization, SVM, Multilayer Perceptron (MLP), Convolutional Neural Networks (CNN), KMeans Clustering, Silhouette Score, Silhouette Visualization, Random Forest Classification, PCA, TSNE, Local Linear Embeddings (LLE)",
+      "area": "Image Classification, Convolutional Neural Networks (CNN), Multilayer Perceptron (MLP), SVM, Random Forest Classification, KMeans Clustering, Dimensionality Reduction, PCA, TSNE, Local Linear Embeddings (LLE), Silhouette Score",
       "libs": ["TensorFlow/Keras", "scikit-learn", "SciPy", "NumPy", "pandas", "Matplotlib"],
       "color": "#E5F3FF",
       "buttons": [
@@ -49,7 +49,7 @@
     {
       "title": "Finding Regimes in Time Series",
       "description": "Identify the regimes in time series data for U.S. unemployment and year-over-year inflation rate using the CPI (Consumer Price Index).",
-      "area": "KMeans Clustering, Silhouette Score, Silhouette Visualization, Inertia Metric, StandardScaler, Time Series Analysis",
+      "area": "Time Series Analysis, KMeans Clustering, Silhouette Score, Silhouette Visualization, Inertia Metric, Feature Engineering",
       "libs": ["scikit-learn", "Yellowbrick", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#E5FFE5",
       "buttons": [
@@ -60,7 +60,7 @@
     {
       "title": "Predicting Exchange Rate Using Time Series",
       "description": "Forecast the Japanese exchange rate using the previous 10 days of data.",
-      "area": "Random Forest Regression, Recurrent Neural Networks (RNN), MSE, Movement Direction Accuracy, TimeSeriesSplit Cross-validation",
+      "area": "Time Series Analysis, Recurrent Neural Networks (RNN), Random Forest Regression, Cross-validation, MSE, Accuracy",
       "libs": ["TensorFlow/Keras", "scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF3E5",
       "buttons": [
@@ -71,7 +71,7 @@
     {
       "title": "Predicting Insurance Purchase Using Neural Networks",
       "description": "Predict if a customer will purchase caravan insurance given their sociodemographic and product ownership data.",
-      "area": "Classification, Deep Neural Networks (DNN), AUC-ROC, Stratified Sampling, ELU Activation, SGD with Momentum, Batch Normalization, Early Stopping, L2 Regularization, Dropout",
+      "area": "Classification, Deep Neural Networks (DNN), AUC-ROC, Stratified Sampling, ELU Activation, SGD, Batch Normalization, Early Stopping, Regularization, Dropout",
       "libs": ["TensorFlow/Keras", "scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#F3E5FF",
       "buttons": [
@@ -82,7 +82,7 @@
     {
       "title": "Classifying Politicians",
       "description": "Classify 435 politicians as Democrat or Republican based on their votes for 16 bills.",
-      "area": "Linear Regression, Spectral Clustering, Accuracy, Gaussian Kernel, Graph Laplacian",
+      "area": "Classification, Spectral Clustering, Graph Laplacian, Gaussian Kernel, Linear Regression, Accuracy",
       "libs": ["scikit-learn", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFE5F3",
       "buttons": [
@@ -94,7 +94,7 @@
     {
       "title": "Qualifying Red Wine",
       "description": "Rate the quality of new wine samples based on their attributes on a 0 to 10 scale.",
-      "area": "Linear Regression, Gaussian RBF Regression, Laplacian Regression, MSE, 5-fold Cross-validation, Hyperparameter Tuning",
+      "area": "Linear Regression, Kernel Regression, MSE, Cross-validation, Hyperparameter Tuning",
       "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#E5FFFF",
       "buttons": [
@@ -106,7 +106,7 @@
     {
       "title": "Predicting NYSE Volume Using Time Series",
       "description": "Predict the next day's trading volume of Dow Jones Industrial Average using the historical volume, volatility, and returns.",
-      "area": "Random Forest Regression, Time Series Analysis, RMSE, TimeSeriesSplit, Hyperparameter Tuning, Lagged Features, Persistence Baseline",
+      "area": "Time Series Analysis, Random Forest Regression, RMSE, Hyperparameter Tuning",
       "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFFFE5",
       "buttons": [
@@ -117,7 +117,7 @@
     {
       "title": "Predicting Credit Card Defaults",
       "description": "Predict whether a credit card owner will default based on their balance, income, and student status.",
-      "area": "Feature Engineering, Logistic Regression, SGD Classification, ROC-AUC, Precision-Recall Curves, 10-fold Cross-validation, Threshold Tuning, Class Balancing",
+      "area": "Classification, Logistic Regression, SGD Classification, Feature Engineering, ROC-AUC, Precision, Recall, Cross-validation",
       "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFE5E5",
       "buttons": [
@@ -128,7 +128,7 @@
     {
       "title": "Predicting Housing Prices in King County",
       "description": "Evaluate the performance of various regression models in predicting house prices in King County, WA based on property features such as square footage, condition, location, bedrooms, and bathrooms.",
-      "area": "Feature Engineering, Linear Regression, Elastic Net Regression, SVM Regression, AdaBoost Regression, Random Forest Regression, RMSE, GridSearchCV, Cross-validation, Overfitting Analysis",
+      "area": "Regression, Linear Regression, Elastic Net Regression, SVM Regression, AdaBoost Regression, Random Forest Regression, Feature Engineering, RMSE, Cross-validation",
       "libs": ["scikit-learn", "pandas", "NumPy", "Matplotlib"],
       "color": "#E5F3FF",
       "buttons": [
@@ -139,7 +139,7 @@
     {
       "title": "Finding Submarines",
       "description": "Produce a 2D and 3D path of a submarine given noisy acoustic data over 24 hours in 30-minute increments.",
-      "area": "Signal Processing, 3D FFT, Fourier Transform, Frequency Domain Filtering, Gaussian Bandpass Filter, Inverse FFT, 3D Isosurface Visualization",
+      "area": "Signal Processing, Fast Fourier Transform (FFT), Frequency Domain Filtering, Gaussian Bandpass Filter, Inverse FFT, 3D Isosurface Visualization",
       "libs": ["NumPy", "Plotly", "pandas", "Matplotlib"],
       "color": "#E5FFE5",
       "buttons": [
@@ -151,7 +151,7 @@
     {
       "title": "Digits Classifier",
       "description": "Identify the digit in an image and determine the most effective classification model for the task.",
-      "area": "SVM Classification, RBF Kernel, Random Forest Classification, Extra Trees Classification, AdaBoost Classification, Gradient Boosting Classification, Voting Classification, Accuracy, GridSearchCV, RandomizedSearchCV, Stacking",
+      "area": "Image Classification, SVM Classification, RBF Kernel, Ensemble Methods, Random Forest, Extra Trees, AdaBoost, Gradient Boosting, Voting Classifier, Accuracy, Cross-validation",
       "libs": ["scikit-learn", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#FFF3E5",
       "buttons": [
@@ -160,9 +160,9 @@
       ]
     },
     {
-      "title": "Predicting Housing Prices",
+      "title": "Predicting Housing Prices in California",
       "description": "Predict house values in California census districts using coordinates, income, age, population, and property features.",
-      "area": "Feature Engineering, Linear Regression, Decision Tree Regression, Random Forest Regression, Ridge Regression, RMSE, MAE, GridSearchCV, RandomizedSearchCV, 4-fold Cross-validation, Polynomial Features",
+      "area": "Regression, Linear Regression, Decision Tree Regression, Random Forest Regression, Ridge Regression, Feature Engineering, Polynomial Features, RMSE, MAE, Cross-validation",
       "libs": ["scikit-learn", "SciPy", "pandas", "NumPy", "Matplotlib"],
       "color": "#F3E5FF",
       "buttons": [
@@ -173,7 +173,7 @@
     {
       "title": "Compressed Image Recovery",
       "description": "Investigate the compressibility of an image and recover a compressed image.",
-      "area": "Lasso Regression, Discrete Cosine Transform, Convex Optimization, Compressed Sensing",
+      "area": "Compressed Sensing, Convex Optimization, Discrete Cosine Transform (DCT), Lasso Regression",
       "libs": ["CVXPY", "SciPy", "NumPy", "scikit-image", "Matplotlib", "CVXOPT"],
       "color": "#FFE5F0",
       "buttons": [
@@ -188,7 +188,7 @@
       "title": "Danny's Diner",
       "description": "Explored a restaurant's customer sales data to derive insights on visiting patterns, purchasing trends, and menu popularity.",
       "area": "Aggregate functions, window functions, filtering, conditional expressions",
-      "libs": ["Window Functions", "Aggregate Functions", "Joins", "Ranking Functions"],
+      "libs": ["JOIN", "GROUP BY", "DENSE_RANK", "PARTITION"],
       "color": "#FFE5F3",
       "buttons": [
         { "label": "GitHub", "url": "https://github.com/yoonoolee/dannys_diner" },
