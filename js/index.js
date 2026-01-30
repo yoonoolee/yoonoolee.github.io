@@ -21,7 +21,7 @@ function initTypingAnimation() {
     const phrases = [
         "Avery!",
         "a Master's Student @ UC Berkeley",
-        "Cofounder & CTO @ Cherrytree",
+        "Founding Engineer @ Cherrytree",
         "excited for you to check out my portfolio"
     ];
 
