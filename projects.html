@@ -28,12 +28,68 @@
 <body>
     <header>
         <div class="container">
-            <nav></nav>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html" class="active" aria-current="page">Projects</a>
+                <a href="interests.html">Interests</a>
+            </nav>
         </div>
     </header>
 
     <div class="main-container container">
-        <aside class="sidebar"></aside>
+        <aside class="sidebar">
+            <div class="profile-pic-wrapper">
+                <img src="images/profile_pic.png" alt="Avery Lee" class="profile-pic">
+            </div>
+            <h2 class="profile-name">Avery Lee</h2>
+            <p class="profile-location">
+                <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <path d="M8 0C5.2 0 3 2.2 3 5c0 3.5 5 11 5 11s5-7.5 5-11c0-2.8-2.2-5-5-5zm0 7.5c-1.4 0-2.5-1.1-2.5-2.5S6.6 2.5 8 2.5s2.5 1.1 2.5 2.5S9.4 7.5 8 7.5z"/>
+                </svg>
+                San Francisco Bay Area
+            </p>
+            <div class="profile-links">
+                <a href="https://berkeley.edu" class="profile-link" target="_blank" rel="noopener noreferrer">
+                    <svg height="16" width="16" viewBox="0 0 16 16" aria-hidden="true">
+                        <path fill="currentColor" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+                    </svg>
+                    <span>UC Berkeley</span>
+                </a>
+                <a href="https://cherrytree.app/" class="profile-link" target="_blank" rel="noopener noreferrer">
+                    <svg height="16" width="16" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                    </svg>
+                    <span>Cherrytree</span>
+                </a>
+                <a href="https://www.linkedin.com/in/averyaverylee/" class="profile-link" target="_blank" rel="noopener noreferrer">
+                    <svg height="16" width="16" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/yoonoolee" class="profile-link" target="_blank" rel="noopener noreferrer">
+                    <svg height="16" width="16" viewBox="0 0 16 16" aria-hidden="true">
+                        <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <div class="email-wrapper">
+                    <button class="profile-link email-toggle" onclick="toggleEmail(this)" aria-expanded="false">
+                        <svg height="16" width="16" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span>Email</span>
+                        <svg class="email-chevron" height="12" width="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="email-expanded">
+                        <a href="mailto:avery_lee@berkeley.edu" class="email-address">avery_lee@berkeley.edu</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
 
         <main class="main-content">
             <section id="projects">
@@ -48,10 +104,438 @@
                 </div>
 
                 <h3 class="project-category">Machine Learning Projects</h3>
-                <div class="project-grid" id="python-projects"></div>
+                <div class="project-grid" id="python-projects">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/FriendFic_Personalized_Story_Generation_App.png'); background-color: #E8F4FF;" role="presentation">
+                            <span class="project-status-tag">Work in Progress</span>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">FriendFic Personalized Story Generation App</h4>
+                            <p class="project-description">Mobile app that generates personalized short stories daily for friend groups, tailored to their unique humor, interests, and user feedback.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">NLP, Generative AI, Personalization, LLM Fine-tuning, LoRA, PEFT, Huggingface Transformers, RAG, Word Embeddings, Vector Databases, PostgreSQL, FastAPI</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">Transformers</span><span class="tag">PEFT</span><span class="tag">BitsAndBytes</span><span class="tag">PyTorch</span><span class="tag">spaCy</span><span class="tag">NLTK</span><span class="tag">scikit-learn</span><span class="tag">pandas</span><span class="tag">NumPy</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/fiction_repo" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Evidence_vs_Intuition_Rhetoric_NLP_Research.png'); background-color: #FFF4E8;" role="presentation">
+                            <span class="project-status-tag">Recent</span>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Evidence vs Intuition Rhetoric NLP Research</h4>
+                            <p class="project-description">NLP Research studying the relationship between House of Representative rhetoric (evidence vs intuition-based language) and their constituents' education levels.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">NLP, BERT Regression, LLM Fine-tuning, Word Embeddings, TF-IDF, Cosine Similarity, SemAxis, Feature Engineering, Data Scraping, Statistical Analysis, Mixed-effects Regression, Pearson Correlation, Paired T-tests, Inter-rater Reliability</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">PyTorch</span><span class="tag">Transformers</span><span class="tag">spaCy</span><span class="tag">Gensim</span><span class="tag">SciPy</span><span class="tag">statsmodels</span><span class="tag">scikit-learn</span><span class="tag">NLTK</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/evidence_vs_intuition_nlp" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/evidence_vs_intuition_nlp/blob/master/Modeling/Evidence_and_Intuition_vs_Education.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/evidence_vs_intuition_nlp/blob/master/A%20Bert-based%20Analysis%20of%20Evidence%20versus%20Intuition%20Rhetoric%20in%20U.S.%20House%20of%20Representatives%20and%20Constituent%20Education%20Levels.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                    <span>Paper</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Food.com_Search_Engine_Project.png'); background-color: #FFE5E5;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Food.com Search Engine Project</h4>
+                            <p class="project-description">An enhanced recipe search engine for food.com that supports complex descriptions or dietary restrictions.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">NLP, Recommendation Systems, TF-IDF, Cosine Similarity, Text Preprocessing, Tokenization, Negative Query Handling</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">scikit-learn</span><span class="tag">NLTK</span><span class="tag">pandas</span><span class="tag">NumPy</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/recipes_search_project" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/recipes_search_project/blob/main/recipes_final.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Classifying_and_Clustering_Images.png'); background-color: #E5F3FF;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Classifying and Clustering Images</h4>
+                            <p class="project-description">Visualize clusters of digit images using various dimensionality reduction techniques. Cluster images of different individuals' faces.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Image Classification, Convolutional Neural Networks (CNN), Multilayer Perceptron (MLP), SVM, Random Forest Classification, KMeans Clustering, Dimensionality Reduction, PCA, TSNE, Local Linear Embeddings (LLE), Silhouette Score</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">TensorFlow/Keras</span><span class="tag">scikit-learn</span><span class="tag">SciPy</span><span class="tag">NumPy</span><span class="tag">pandas</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/classifying_and_clustering_images" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/classifying_and_clustering_images/blob/main/classifying_and_clustering_images.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Finding_Regimes_in_Time_Series.png'); background-color: #E5FFE5;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Finding Regimes in Time Series</h4>
+                            <p class="project-description">Identify the regimes in time series data for U.S. unemployment and year-over-year inflation rate using the CPI (Consumer Price Index).</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Time Series Analysis, KMeans Clustering, Silhouette Score, Silhouette Visualization, Inertia Metric, Feature Engineering</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">scikit-learn</span><span class="tag">Yellowbrick</span><span class="tag">SciPy</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/finding_regimes_in_time_series" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/finding_regimes_in_time_series/blob/main/finding_regimes_in_time_series.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Predicting_Exchange_Rate_Using_Time_Series.png'); background-color: #FFF3E5;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Predicting Exchange Rate Using Time Series and Neural Networks</h4>
+                            <p class="project-description">Forecast the Japanese exchange rate using the previous 10 days of data.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Time Series Analysis, Recurrent Neural Networks (RNN), Random Forest Regression, Cross-validation, MSE, Accuracy</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">TensorFlow/Keras</span><span class="tag">scikit-learn</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/predicting_exchange_rate_using_time_series" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/predicting_exchange_rate_using_time_series/blob/main/predicting_exchange_rate_using_time_series.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Predicting_Insurance_Purchase_Using_Neural_Networks.png'); background-color: #F3E5FF;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Predicting Insurance Purchase Using Neural Networks</h4>
+                            <p class="project-description">Predict if a customer will purchase caravan insurance given their sociodemographic and product ownership data.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Classification, Deep Neural Networks (DNN), AUC-ROC, Stratified Sampling, ELU Activation, SGD, Batch Normalization, Early Stopping, Regularization, Dropout</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">TensorFlow/Keras</span><span class="tag">scikit-learn</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/predicting_insurance_purchase_using_neural_networks" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/predicting_insurance_purchase_using_neural_networks/blob/main/predicting_insurance_purchase_using_neural_networks.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Classifying_Politicians.png'); background-color: #FFE5F3;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Classifying Politicians</h4>
+                            <p class="project-description">Classify 435 politicians as Democrat or Republican based on their votes for 16 bills.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Classification, Spectral Clustering, Graph Laplacian, Gaussian Kernel, Linear Regression, Accuracy</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">scikit-learn</span><span class="tag">SciPy</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/classifying_politicians" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/classifying_politicians/blob/main/classifying_politicians.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/classifying_politicians/blob/main/Classifying_Politicians.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                    <span>Paper</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Qualifying_Red_Wine.png'); background-color: #E5FFFF;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Qualifying Red Wine</h4>
+                            <p class="project-description">Rate the quality of new wine samples based on their attributes on a 0 to 10 scale.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Linear Regression, Kernel Regression, MSE, Cross-validation, Hyperparameter Tuning</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">scikit-learn</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/qualifying_red_wine" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/qualifying_red_wine/blob/main/qualifying_red_wine.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/qualifying_red_wine/blob/main/Qualifying_Red_Wine.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                    <span>Paper</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Predicting_NYSE_Volume_Using_Time_Series.png'); background-color: #FFFFE5;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Predicting NYSE Volume Using Time Series</h4>
+                            <p class="project-description">Predict the next day's trading volume of Dow Jones Industrial Average using the historical volume, volatility, and returns.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Time Series Analysis, Random Forest Regression, RMSE, Hyperparameter Tuning</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">scikit-learn</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/predict_NYSE_volume_using_time_series" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/predict_NYSE_volume_using_time_series/blob/main/predict_nyse_volume_using_time_series.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Predicting_Credit_Card_Defaults.png'); background-color: #FFE5E5;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Predicting Credit Card Defaults</h4>
+                            <p class="project-description">Predict whether a credit card owner will default based on their balance, income, and student status.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Classification, Logistic Regression, SGD Classification, Feature Engineering, ROC-AUC, Precision, Recall, Cross-validation</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">scikit-learn</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/predicting_credit_card_defaults" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/predicting_credit_card_defaults/blob/main/predicting_credit_card_defaults.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Predicting_Housing_Prices_in_King_County.png'); background-color: #E5F3FF;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Predicting Housing Prices in King County</h4>
+                            <p class="project-description">Evaluate the performance of various regression models in predicting house prices in King County, WA based on property features such as square footage, condition, location, bedrooms, and bathrooms.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Regression, Linear Regression, Elastic Net Regression, SVM Regression, AdaBoost Regression, Random Forest Regression, Feature Engineering, RMSE, Cross-validation</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">scikit-learn</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/predicting_housing_prices_in_king_county" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/predicting_housing_prices_in_king_county/blob/main/predicting_housing_prices_in_king_county.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Finding_Submarines.png'); background-color: #E5FFE5;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Finding Submarines</h4>
+                            <p class="project-description">Produce a 2D and 3D path of a submarine given noisy acoustic data over 24 hours in 30-minute increments.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Signal Processing, Fast Fourier Transform (FFT), Frequency Domain Filtering, Gaussian Bandpass Filter, Inverse FFT, 3D Isosurface Visualization</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">NumPy</span><span class="tag">Plotly</span><span class="tag">pandas</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/finding_submarines" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/finding_submarines/blob/main/finding_submarines.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/finding_submarines/blob/main/Finding_Submarines.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                    <span>Paper</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Digits_Classifier.png'); background-color: #FFF3E5;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Digits Classifier</h4>
+                            <p class="project-description">Identify the digit in an image and determine the most effective classification model for the task.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Image Classification, SVM Classification, RBF Kernel, Ensemble Methods, Random Forest, Extra Trees, AdaBoost, Gradient Boosting, Voting Classifier, Accuracy, Cross-validation</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">scikit-learn</span><span class="tag">SciPy</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/digits_classifier" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/digits_classifier/blob/main/digits_classifier.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Predicting_Housing_Prices_in_California.png'); background-color: #F3E5FF;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Predicting Housing Prices in California</h4>
+                            <p class="project-description">Predict house values in California census districts using coordinates, income, age, population, and property features.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Regression, Linear Regression, Decision Tree Regression, Random Forest Regression, Ridge Regression, Feature Engineering, Polynomial Features, RMSE, MAE, Cross-validation</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">scikit-learn</span><span class="tag">SciPy</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/predicting_housing_prices" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/predicting_housing_prices/blob/main/predicting_housing_prices.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Compressed_Image_Recovery.png'); background-color: #FFE5F0;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Compressed Image Recovery</h4>
+                            <p class="project-description">Investigate the compressibility of an image and recover a compressed image.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Compressed Sensing, Convex Optimization, Discrete Cosine Transform (DCT), Lasso Regression</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">CVXPY</span><span class="tag">SciPy</span><span class="tag">NumPy</span><span class="tag">scikit-image</span><span class="tag">Matplotlib</span><span class="tag">CVXOPT</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/compressed_image_recovery" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/compressed_image_recovery/blob/main/compressed_image_recovery.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/compressed_image_recovery/blob/main/Compressed_Image_Recovery.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                    <span>Paper</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <h3 class="project-category">SQL Projects</h3>
-                <div class="project-grid" id="sql-projects"></div>
+                <div class="project-grid" id="sql-projects">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/Dannys_Diner.png'); background-color: #FFE5F3;" role="presentation">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">Danny's Diner</h4>
+                            <p class="project-description">Explored a restaurant's customer sales data to derive insights on visiting patterns, purchasing trends, and menu popularity.</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Technologies &amp; Techniques</p>
+                            <p class="project-area">Aggregate functions, window functions, filtering, conditional expressions</p>
+                            <div class="project-divider"></div>
+                            <p class="project-section-label">Tools &amp; Libraries</p>
+                            <div class="project-tags"><span class="tag">JOIN</span><span class="tag">GROUP BY</span><span class="tag">DENSE_RANK</span><span class="tag">PARTITION</span></div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/yoonoolee/dannys_diner" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://github.com/yoonoolee/dannys_diner/blob/main/dannys_diner.ipynb" class="project-btn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/jupyter_logo.png" width="14" height="14" alt="" aria-hidden="true" style="display: inline-block; filter: brightness(0) invert(1);">
+                                    <span>Jupyter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>

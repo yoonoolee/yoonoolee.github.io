@@ -70,6 +70,27 @@ function generateSidebar() {
             const isExternal = link.url.startsWith('http');
             const targetAttr = isExternal ? 'target="_blank" rel="noopener noreferrer"' : '';
 
+            // Special handling for email - make it expandable
+            if (link.text === 'Email') {
+                const email = link.url.replace('mailto:', '');
+                return `
+                    <div class="email-wrapper">
+                        <button class="profile-link email-toggle" onclick="toggleEmail(this)" aria-expanded="false">
+                            <svg height="16" width="16" viewBox="${link.icon.viewBox}" aria-hidden="true">
+                                ${link.icon.path}
+                            </svg>
+                            <span>${link.text}</span>
+                            <svg class="email-chevron" height="12" width="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <div class="email-expanded">
+                            <a href="${link.url}" class="email-address">${email}</a>
+                        </div>
+                    </div>
+                `;
+            }
+
             return `
                 <a href="${link.url}" class="profile-link" ${targetAttr}>
                     <svg height="16" width="16" viewBox="${link.icon.viewBox}" aria-hidden="true">
@@ -156,6 +177,19 @@ function initializeComponents() {
     } else {
         console.warn('Navigation element not found');
     }
+}
+
+/**
+ * Toggle email expansion
+ * @param {HTMLElement} button - The email toggle button
+ */
+function toggleEmail(button) {
+    const wrapper = button.closest('.email-wrapper');
+    const expanded = wrapper.querySelector('.email-expanded');
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+    button.setAttribute('aria-expanded', !isExpanded);
+    wrapper.classList.toggle('expanded', !isExpanded);
 }
 
 // Initialize when DOM is ready
