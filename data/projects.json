@@ -1,7 +1,7 @@
 {
   "python": [
     {
-      "title": "FriendFic Personalized Story Generation App",
+      "title": "Fiction Unlimited Personalized Story Generation App",
       "description": "Mobile app that generates personalized short stories daily for friend groups, tailored to their unique humor, interests, and user feedback.",
       "area": "NLP, Generative AI, Personalization, LLM Fine-tuning, LoRA, PEFT, Huggingface Transformers, RAG, Word Embeddings, Vector Databases, PostgreSQL, FastAPI",
       "libs": ["Transformers", "PEFT", "BitsAndBytes", "PyTorch", "spaCy", "NLTK", "scikit-learn", "pandas", "NumPy"],
@@ -9,7 +9,7 @@
       "image": "images/FriendFic_Personalized_Story_Generation_App.png",
       "status": "Work in Progress",
       "buttons": [
-        { "label": "GitHub", "url": "https://github.com/yoonoolee/fiction_repo" }
+        { "label": "GitHub", "url": "https://github.com/yoonoolee/fiction_unlimited" }
       ]
     },
     {
